@@ -16,11 +16,12 @@ module.exports = class API {
            headers: {
              'Content-Type': 'application/json'
            }
-         }
+         };
          
          let req = await request.get(`https://mythical-bots.glitch.me/api?key=${this.token}?postServers?${ID}/${serverCount}`, ops).catch(err => {
            reject(err);
-         })
+         });
+          console.log("[MBL] Sent Server Count.")
          
          resolve(req.body);
          
