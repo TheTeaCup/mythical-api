@@ -27,5 +27,25 @@ module.exports = class API {
          
        });
      };
+  
+  // setBotUser
+    postUsers(ID, userCount) {
+        return new Promise(async (resolve, reject) => {
+         
+         let ops = {
+           headers: {
+             'Content-Type': 'application/json'
+           }
+         }
+         
+         let req = await request.get(`https://mythical-bots.glitch.me/api?key=${this.token}?postUsers?${ID}/${userCount}`, ops).catch(err => {
+           reject(err);
+         })
+         console.log("[MBL] Sent User Count.")
+         resolve(req.body);
+         
+       });
+     }; 
+  
     };
     //Mythical.Bots
