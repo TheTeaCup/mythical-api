@@ -1,7 +1,7 @@
 Hello there Mythical User!
 =================
 
-- This API is for Mythica-Bots! [Found Here]()
+- This API is for Mythica-Bots! [Found Here](https://discord.gg/NmNB7CK)
 
 
 
@@ -11,8 +11,10 @@ let api = new MythicalBotsAPI('API Key');
 
 client.on('ready', ()=> {
 api.postServers(client.user.id, client.guilds.size);
+api.postUsers(client.user.id, client.users.size);
   setInterval(function() {
 api.postServers(client.user.id, client.guilds.size);
+api.postUsers(client.user.id, client.users.size);
 }, 900000);
 });
 ```
