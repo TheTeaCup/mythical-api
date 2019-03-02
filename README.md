@@ -2,7 +2,7 @@ Hello there Mythical User!
 =================
 
 - This API is for Mythica-Bots! [Found Here](https://discord.gg/NmNB7CK)
-
+- Website has been update! See [Here](https://mythical-bots.ml)
 
 
 ```
